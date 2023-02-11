@@ -2,7 +2,6 @@ import './App.css';
 import { useEffect, useState } from 'react';
 import Axios from 'axios';
 import Coin from './components/Coin';
-
 function App() {
     const [listofcoins, setlistofcoins] = useState([]);
     const [searchWord,setsearchWord] = useState("");
@@ -17,7 +16,6 @@ function App() {
     const filterCoins = listofcoins.filter((coin) => {
         return coin.name.toLowerCase().includes(searchWord.toLowerCase());
     })
-
     return (
         <div className="App">
             <div className="Header">
