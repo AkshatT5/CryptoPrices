@@ -10,7 +10,6 @@ function App() {
             (response) => {
                 setlistofcoins(response.data.coins);
         })
-
     },[])
     const filterCoins = listofcoins.filter((coin) => {
         return coin.name.toLowerCase().includes(searchWord.toLowerCase());
